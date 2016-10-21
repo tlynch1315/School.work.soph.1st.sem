@@ -1,0 +1,16 @@
+Lab 3
+
+gcdmain.cpp: 4/10 Points
+		-3 Crashes when one of the inputs is zero.
+		-3 No comments.  Please comment your code!  Any non-trivial section of code (i.e. the gcd function) should have a line explaining how it works.
+
+polar.cpp: 10/10 Points
+        No Problems
+
+		-0 You don't need to include both <cmath> and <math.h>, they are two different versions of the same library.  Generally, you only need to include <cmath> when using C++.
+
+menucalc.cpp: 7/10 Points
+		-3 No comments.  Please see remark above about commenting code.
+
+
+GRADE: 21/30

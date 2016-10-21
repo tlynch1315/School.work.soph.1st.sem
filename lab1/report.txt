@@ -1,0 +1,17 @@
+The program from part 3 is a program that will tell the user what the
+potential energy of an object is.  The user inputs the mass and height of the
+object and is then given the potential energy.
+
+The program is structured by initializing the float variable m, which is 
+for mass, then asking the user to input a value for mass.  If the user inputs
+a negative number or a 0 then the program will end because mass cannot be
+negative or 0. The same process is then done for the variable h, which is
+for height, since height cannot be negative. The float variable pe is then 
+initialized and is set equal to m*h*9.81, which is the formula for 
+potential energy. The program then outputs "The potential energy of the object
+is: **(whatever the value is)** joules.
+
+I evaluated it for correctness by inputting negative numbers and 0 for mass
+and inputting negative numbers for h.  Also, I tried multiple times with
+different positive numbers, not only integers, and checked the program's
+solution using a calculator.

@@ -1,0 +1,13 @@
+Tommy Lynch NDID: Tlynch2
+
+From the user's perspective, this program asks the user for a startup file and if the file name is nonexistent the program ends.  Otherwise, the program goes on to ask the user to choose one of 5 different options: displaying all sayings, add a new saying, return sayings containing a certain word/phrase, copy sayings to a new file, or to quit.  If the user chooses something other than these options the program asks the user to enter a valid choice.  
+
+
+
+This program begins by streaming in a file that the user is asked to enter the name of.  The program gets the first line of the file and inputs it into the vector of strings as a line until the end of the file is reached.  The program then enters a while loop that displays the user's option and then asks for the user's choice and enters a switch case.  Case one calls the function dispsayings, which displays the sayings in the vector using an iterator in a for loop. The second case calls the function newsaying, which allows the user to add a saying to the vector of strings using the getline and push_back.  The third case calls the function sayword, which allows the user to input a word and have all sayings containing that word returned using getline to get the word/phrase and then uses a for loop with an iterator to go through the lines of the vector and at each line it tests if the word is in the line using find() != string::npos, which is just saying that if the find() returns a value the string contains the word/phrase and when this is true the program outputs that line.  The fourth case calls the function newfile, which allows the user to save the vector into a new file using ofstream and a for loop with an iterator that outputs each line of the vector into the file you are streaming out.
+
+I checked for errors by running the program over and over and seeing if the program gave any errors when entering weird inputs such as invalid file names or invalid choices for the while loop.  I also checked to see if the display option was displaying any strings I added and if the newfile option was copying over sayings that I input into the vector.
+
+
+
+

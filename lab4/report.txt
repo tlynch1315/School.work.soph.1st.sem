@@ -1,0 +1,12 @@
+Tommy Lynch NDID: Tlynch2
+
+The last part of the lab was the ndfootball.cpp.  This program allows the user  to access information about the number of wins and losses of the Notre Dame football team from the year 1900 to the current year.  The user has 6 options:1 for record of a specific year, 2 for years with at least "n" wins, 3 for yearswith at least "n" losses, 4 for years with a record of at least .500, 5 for years with a losing record, and 6 to quit.  In option 1 the user has to input the desired year, in option 2 the user has to input the amount of wins, and in option 3 the user has to input the amount of losses. After all of the required inputs are given, the user will see the results that he asked for and the menu will be given again until the user chooses option 6, which is quitting.
+
+The program includes premade arrays for the wins and losses of each year and calls them in each function.  The size of the arrays are equal and determined bydividing the amount of bytes in one array and dividing by the amount of bytes ina single integer.  The program runs a while loop while the input of c, which is the choice of which program to run, is not equal to 6.  Inside the while loop is a switch case that takes the input c and runs a different function for each valid value of c.
+
+I checked for the correctness by looking at the wins and losses of specific years and comparing the results of my program to the actual values in the array.  I also included a while loop that does not exit until the input for c is a valid input so that the switch case has  a case for that value of c.
+
+
+
+
+
