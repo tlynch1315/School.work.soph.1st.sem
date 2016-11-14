@@ -1,0 +1,16 @@
+Tommy Lynch NDID: Tlynch2
+
+For this lab, I had to create a state class, which has private attributes: abbrevaiation, name, capital, population, year founded, and number of representatives.
+In the state.h file, which is the interface for the state class, I created methods to set the abbreviation, name, capital, population, year founded, and number of representatives, and to get all of these attributes.
+In the state.cpp file, which is the implementation of the state class, I created functions for each of the public methods.
+In the driver for the state class, statemain.cpp, the program asks streams in a file into a vector of the State class.
+The program then runs a while loop and a switch case to allow the user to choose an option from a menu.
+The user will input a number, which will call a certain function.
+
+The displayall function displays all of the information of each state using a for loop with an iterator and using all of the public methods of accessing the private information in the State class.
+
+The specificstate function asks the user for the abbreviation of a state and then uses an if statement inside of a for loop with an iterator to compare the value of the string abbreviation to the value of the abbreviation for the state that the iterator is pointing at.  If the comparison = 0 then the strings match and the function displays the information of that state and changes the value of valid to true so the function does not display invalid abbreviation.
+
+the population function asks the user for an input of a population and then uses a for loop with an if statement comparing the input to the values of the populations of the states the iterator is pointing at and displays information for states where the population is greater than the input.
+
+The statesbyyear function asks the user for a year and then compares that year to the year the states were founded using an iterator in a for loop with an if statement and then displays information for states founded after that year.

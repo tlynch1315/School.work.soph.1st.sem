@@ -1,0 +1,23 @@
+Tommy Lynch NDID: Tlynch2
+
+In The second part of lab8, I created a program for conway's game of life.
+The class Lifeboard has two private attributes, an array of chars which is the board, and an array of ints which stores the amount of x's around a certain spot in the board in the same spot in the array of ints.
+I created methods for making a cell live, removing a live cell, setting the count array, changing the values of the board, which uses the count array, advancing an iteration, which uses the changeValue() method, and printing the board.
+In my lifeboard.cpp file, which is the implementation of lifeboard.h, I initialized the board with borders using the Lifeboard() method. 
+I set values for the count array using the getCount() method by using if statements in nested for loops to get the amount of x's around a given location on the board and set that number equal to the same position on the count array.
+In changeValue() I called the getCount() method to get the array of counts and then based on the count values and the rules of the game, I changed the values of the board array.
+in newcell(int, int) I checked if the inputs were on the borders and then if they were not I set the value of that location on the board array equal to 'x' and cleared the screen and printed the new array.
+The remove(int, int) method is the same as the newcell(int, int) method only it sets a cell equal to ' ' not 'x'.
+The advance() method calls the changeValue() method to change the values of the board then clears the screen and prints the new board.
+the print() method uses nested for loops to output the board array.
+
+In life.cpp I used argc and argv along with an if statement to see if the user wants to run interactive or batch mode.
+the function for interactive is interactive(Lifeboard &) and the function for batch mode is planned(Lifeboard &, char*).
+the interactive mode gives the user options using a while loop and switch case and calls methods bases upon the user's input.  The planned mode passes through argv[1], which is a text file with the scene.
+The function opens the file and streams in the values, which is a command first, then the row, then the column.
+I added one to the row and column after reading them in because the top left of the board is (1,1) not (0,0).
+The program then goes into a switch case just like the interactive mode and runs different methods based on the command read in.
+
+To the user, this program is simulating Conway's game of life according to the commands that the user inputs.  
+If the user does not include a text file after the executable command, the program goes into interactive mode where the user is presented with a menu and can choose to enter a new live cell, remove one, advance an iteration, quit, or play continuously.
+If the user does input a text file after the executable command, then the program just runs the game based on the starting position given by the text file.
