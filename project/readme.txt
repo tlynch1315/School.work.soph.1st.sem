@@ -1,2 +1,1 @@
-I worked with Will Fritz(Wfritz).
-All files are in his dropbox.
+Worked as a pair with Tommy Lynch(Tlynch2).
