@@ -1,0 +1,13 @@
+Final Project
+
+***** Code 190/190 *****
+Nice, clean implementation
+
+Great job keeping main concise and clean and implementing a well-designed snake class
+
+
+***** Report 10/10 *****
+Very thorough and well written
+
+
+GRADE: 200/200

@@ -1,0 +1,20 @@
+Lab 10
+
+***** Part 1 20/20 *****
+Great use of helper functions to break down this problem and to keep your main more concise and clean
+
+
+***** Part 2 20/20 *****
+Watch out for the x and y velocity being randomly set to 0!
+
+
+***** Part 3 30/30 *****
+Wow! This is a very impressive program - great job!
+
+Nice job writing good helper functions
+
+
+***** Report 10/10 *****
+
+
+GRADE: 80/80

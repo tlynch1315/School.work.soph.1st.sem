@@ -1,6 +1,6 @@
 // Tommy Lynch NDID: TLynch2
 
-
+#include<unordered_map>
 #include<string>
 using namespace std;
 class Solution {
@@ -24,7 +24,7 @@ public:
 				// time limit was exceeded so I used insertion sort
 				// but leetcode still said that the time limit
 				// was exceeded
-    void sortString(string&s) {
+    /*void sortString(string&s) {
         for(int i = 0; i < s.size(); i++){
             int indMin = i;
             for (int j = i; j < s.size(); j++){
@@ -38,16 +38,19 @@ public:
         }
     }
 				// insertion sort to sort string
+    */
     bool isAnagram(string s, string t) {
-      if (s.size() > 1 || t.size() > 1){
-        sortString(s);
-        sortString(t);
-      }
-      if (s.compare(t) == 0){
-          return true;
-      }
-      else{
-          return false;
-      }
+      unordered_map<char, int> array1;
+      unordered_map<char, int> array2;
+      for (int i = 0; i < s.size(); i++) array1[s[i]]++;
+      for (int j = 0; j < t.size(); j++) array2[t[j]]++;
+      return array1 == array2;
     }
+				// insertion sort was too long also, so I decided to 
+				// use unordered_maps with char as a reference 
+				// and int as content. I went through each 
+				// string and added one to each point 
+				// referenced by the individual chars
+				// in the strings then compared the two maps
+				// this was accepted by leetcode.com
 };
